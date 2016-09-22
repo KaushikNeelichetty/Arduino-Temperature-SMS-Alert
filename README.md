@@ -15,7 +15,8 @@
 ## Requirements
 <ul>
   <li> SIM Card which can send SMS </li>
-  <li> Any mobile phone to recieve the SMS </li>
+  <li> Mobile phone to recieve the SMS </li>
 </ul>
 
 ## Circuit Diagram
+Connect the devices as per the circuit diagram
