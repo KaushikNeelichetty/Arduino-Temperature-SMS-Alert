@@ -23,6 +23,7 @@ void loop() {
   Serial.println("*C");
   if(cel>LIMIT){
     SendMessage();
+    while(1);
   }
 }
 
