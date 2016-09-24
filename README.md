@@ -22,7 +22,7 @@
 Connect the devices as per the circuit diagram
 <img src = "https://github.com/KaushikNeelichetty/Arduino-Temperature-SMS-Alert/raw/master/Tempeature%20Alerting%20SMS%20_bb.jpg">
 <br>
-Download the <a href="https://github.com/KaushikNeelichetty/Arduino-Temperature-SMS-Alert/raw/master/Tempeature%20Alerting%20SMS%20.fzz"> Fritzing project </a> if you need a better understanding of the connection.
+Download Fritzing from <a href="http://fritzing.org/download/">here</a> and download the <a href="https://github.com/KaushikNeelichetty/Arduino-Temperature-SMS-Alert/raw/master/Tempeature%20Alerting%20SMS%20.fzz"> Fritzing project </a> if you need a better understanding of the connection.
 <ul>
   <li> With the LM35 flat surface facing you, connect the left most pin to the 3.3V of the Uno, the right most pin to the ground of the Uno and the middle pin to the A1 pin of the Uno </li>
   <li> Connect the TX pin of the GSM Module to digital pin 9 in the Uno , Connect the RX pin of the GSM module to digital pin of the Uno, and the ground pin of GSM Modules TTL to the ground pin of the Uno </li>
