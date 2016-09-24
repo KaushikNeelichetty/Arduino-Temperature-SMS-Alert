@@ -45,11 +45,11 @@ Download Fritzing from <a href="http://fritzing.org/download/">here</a> and down
 </ol>
 
 ## Snapshots 
-Serial Monitor Screenshot<br>
+<b>Serial Monitor Screenshot</b><br>
 To enter the serial monitor, open the Arduino IDE on your PC with the Uno plugged into it, select the port to which the Uno is connected and click on the magnifying glass icon on the right top of the IDE, once the serial monitor opens, set the baud rate as per the sketch [here 19200].<br>
 <img src="https://github.com/KaushikNeelichetty/Arduino-Temperature-SMS-Alert/raw/master/Capture.PNG">
 <br>
-Screenshot of the SMS recieved<br>
+<b>Screenshot of the SMS recieved</b><br>
 This is the screenshot of the SMS recieved upon temperature exceeding the limit set.<br>
 <img src="https://github.com/KaushikNeelichetty/Arduino-Temperature-SMS-Alert/raw/master/Screenshot_20160924-193910.png">
 <br>
