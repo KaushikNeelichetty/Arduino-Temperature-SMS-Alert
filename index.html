@@ -21,7 +21,7 @@
       <div class="inner">
         <h1>Arduino-temperaure-based-sms</h1>
         <h2>This project uses an Arduino connected to an LM35 temperature sensor and a GSM module to send an SMS to the user when the temperature exceeds the set limit</h2>
-        <a href="https://github.com/KaushikNeelichetty/Arduino-Temperaure-Based-SMS" class="button"><small>View project on</small> GitHub</a>
+        <a href="https://github.com/KaushikNeelichetty/Arduino-Temperature-SMS-Alert" class="button"><small>View project on</small> GitHub</a>
       </div>
     </header>
 
@@ -29,7 +29,7 @@
       <div class="inner clearfix">
         <section id="main-content">
           <h1>
-<a id="arduino-temperaure-based-sms" class="anchor" href="#arduino-temperaure-based-sms" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Arduino-Temperaure-Based-SMS</h1>
+<a id="arduino-temperature-sms-alert" class="anchor" href="#arduino-temperature-sms-alert" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Arduino-Temperature-SMS-Alert</h1>
 
 <h2>
 <a id="abstract" class="anchor" href="#abstract" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Abstract</h2>
@@ -40,13 +40,20 @@
 <a id="components" class="anchor" href="#components" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Components</h2>
 
 <ol>
-  <li>Arduino Uno</li>
-  <li>Breadboard</li>
-  <li>LM35 Temperature Sensor</li>
-  <li>Connecting wires</li>
-  <li>GSM Module [SIMCOM SIM900A] , with an external antenna attached to it.</li>
-  <li>Power source for the Arduino Uni</li>
-  <li>Power Source for the GSM Module</li>
+  <li>Arduino Uno , can buy <a href="http://www.amazon.in/s/ref=nb_sb_noss_2?url=search-alias%3Daps&amp;field-keywords=arduino+uno">here</a>, there are a lot of counterfeits out there , learn more <a href="https://www.arduino.cc/en/Products/Counterfeit">here.</a>
+</li>
+  <li>Breadboard , can buy <a href="http://www.amazon.in/s/ref=nb_sb_noss_2?url=search-alias%3Daps&amp;field-keywords=breadboard&amp;rh=i%3Aaps%2Ck%3Abreadboard">here</a>
+</li>
+  <li>LM35 Temperature Sensor , can buy <a href="http://www.amazon.in/Robo-India-Temperature-Sensor-LM35/dp/B00WO5AFPE/ref=sr_1_1?ie=UTF8&amp;qid=1474726733&amp;sr=8-1&amp;keywords=lm35">here</a>
+</li>
+  <li>Connecting wires , can buy <a href="http://www.amazon.in/RoboCraze-com-40pin-Dupont-Jumper-Wire/dp/B00WXE49TO/ref=sr_1_1?s=computers&amp;ie=UTF8&amp;qid=1474726756&amp;sr=1-1&amp;keywords=male+to+male+jumper">here</a>
+</li>
+  <li>GSM Module [SIMCOM SIM900A] , with an external antenna attached to it , can buy <a href="http://www.amazon.in/900A-MODEM-MODULE-ANTENNA-QUALITY/dp/B01BT54Y5G/ref=sr_1_1?s=computers&amp;ie=UTF8&amp;qid=1474726771&amp;sr=1-1&amp;keywords=SIM900A">here</a>
+</li>
+  <li>Power source for the Arduino Uno , can buy <a href="http://www.amazon.in/techBerri-12V-1-5Amp-Adapter-Camera/dp/B011IMQD8Q/ref=sr_1_6?s=computers&amp;ie=UTF8&amp;qid=1474726869&amp;sr=1-6&amp;keywords=12v+adapter">here</a>
+</li>
+  <li>Power Source for the GSM Module , can buy <a href="http://www.amazon.in/techBerri-12V-1-5Amp-Adapter-Camera/dp/B011IMQD8Q/ref=sr_1_6?s=computers&amp;ie=UTF8&amp;qid=1474726869&amp;sr=1-6&amp;keywords=12v+adapter">here</a>
+</li>
 </ol>
 
 <h2>
@@ -60,7 +67,10 @@
 <h2>
 <a id="circuit-diagram" class="anchor" href="#circuit-diagram" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Circuit Diagram</h2>
 
-<p>Connect the devices as per the circuit diagram</p>
+<p>Connect the devices as per the circuit diagram
+<img src="https://github.com/KaushikNeelichetty/Arduino-Temperature-SMS-Alert/raw/master/Tempeature%20Alerting%20SMS%20_bb.jpg">
+<br>
+Download Fritzing from <a href="http://fritzing.org/download/">here</a> and download the <a href="https://github.com/KaushikNeelichetty/Arduino-Temperature-SMS-Alert/raw/master/Tempeature%20Alerting%20SMS%20.fzz"> Fritzing project </a> if you need a better understanding of the connection.</p>
 
 <ul>
   <li> With the LM35 flat surface facing you, connect the left most pin to the 3.3V of the Uno, the right most pin to the ground of the Uno and the middle pin to the A1 pin of the Uno </li>
@@ -77,9 +87,9 @@
   <li> Connect the power jack of the GSM module to the wall adapter [12 V].</li>
   <li> Wait for the network LED in the GSM module to blink once in three times, this means that the module has established a connection with thr network to which the SIM belongs to.</li>
   <li> Call the SIM Card inserted into the GSM module , and as long as you dont hear the message that the number is out of reach or not reachable, then you are all set when it comes to the GSM module.</li>
-  <li> In the tempSMS.ino file change the limit value in line 2.</li>
-  <li> In the tempSMS.ino file replace the x with the mobile number to which you need to send the sms to in line 32.</li>
-  <li> Save a copy of the edited tempSMS.ino file and upload it to the Uno board. </li>
+  <li> In the <a href="https://github.com/KaushikNeelichetty/Arduino-Temperature-SMS-Alert/blob/master/tempSMS.ino">tempSMS.ino</a> file change the limit value in line 2.</li>
+  <li> In the  <a href="https://github.com/KaushikNeelichetty/Arduino-Temperature-SMS-Alert/blob/master/tempSMS.ino">tempSMS.ino</a> file replace the x with the mobile number to which you need to send the sms to in line 32.</li>
+  <li> Save a copy of the edited tempSMS.ino file and upload it to the Uno board. For more info, refer to <a href="https://drive.google.com/file/d/0B4ojjO5sVzx8Mk5iT2NQcFE4U0k/view"> this document. </a> </li>
   <li> Connect the Arduino Uno to a power source and you will get the message from the GSM module once the temperature crosses the limit you set. </li>
   <li> The sketch is written in a way that it stops when the SMS is sent. Reset the arduino using the reset physical button in the board once you recieve the SMS.</li>
 </ol>
@@ -87,20 +97,28 @@
 <h2>
 <a id="snapshots" class="anchor" href="#snapshots" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Snapshots</h2>
 
-<p>Coming Soon...</p>
+<p><b>Serial Monitor Screenshot</b><br>
+To enter the serial monitor, open the Arduino IDE on your PC with the Uno plugged into it, select the port to which the Uno is connected and click on the magnifying glass icon on the right top of the IDE, once the serial monitor opens, set the baud rate as per the sketch [here 19200].<br>
+<img src="https://github.com/KaushikNeelichetty/Arduino-Temperature-SMS-Alert/raw/master/Capture.PNG">
+<br>
+<b>Screenshot of the SMS recieved</b><br>
+This is the screenshot of the SMS recieved upon temperature exceeding the limit set.<br>
+<img src="https://github.com/KaushikNeelichetty/Arduino-Temperature-SMS-Alert/raw/master/Screenshot_20160924-193910.png" height="480" width="270"></p>
+
+<p><br></p>
         </section>
 
         <aside id="sidebar">
-          <a href="https://github.com/KaushikNeelichetty/Arduino-Temperaure-Based-SMS/zipball/master" class="button">
+          <a href="https://github.com/KaushikNeelichetty/Arduino-Temperature-SMS-Alert/zipball/master" class="button">
             <small>Download</small>
             .zip file
           </a>
-          <a href="https://github.com/KaushikNeelichetty/Arduino-Temperaure-Based-SMS/tarball/master" class="button">
+          <a href="https://github.com/KaushikNeelichetty/Arduino-Temperature-SMS-Alert/tarball/master" class="button">
             <small>Download</small>
             .tar.gz file
           </a>
 
-          <p class="repo-owner"><a href="https://github.com/KaushikNeelichetty/Arduino-Temperaure-Based-SMS"></a> is maintained by <a href="https://github.com/KaushikNeelichetty">KaushikNeelichetty</a>.</p>
+          <p class="repo-owner"><a href="https://github.com/KaushikNeelichetty/Arduino-Temperature-SMS-Alert"></a> is maintained by <a href="https://github.com/KaushikNeelichetty">KaushikNeelichetty</a>.</p>
 
           <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
         </aside>
