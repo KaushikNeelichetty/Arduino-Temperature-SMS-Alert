@@ -1,15 +1,15 @@
-# Arduino-Temperaure-Based-SMS
+# Arduino-Temperature-SMS-Alert
 ## Abstract
 <p> This project uses an Arduino connected to an LM35 temperature sensor and a GSM module to send an SMS to the user when the temperature exceeds the set limit.</p>
 ## Components
 <ol>
-  <li>Arduino Uno</li>
-  <li>Breadboard</li>
-  <li>LM35 Temperature Sensor</li>
-  <li>Connecting wires</li>
-  <li>GSM Module [SIMCOM SIM900A] , with an external antenna attached to it.</li>
-  <li>Power source for the Arduino Uni</li>
-  <li>Power Source for the GSM Module</li>
+  <li>Arduino Uno , can buy <a href="">here</a></li>
+  <li>Breadboard , can buy <a href="">here</a></li>
+  <li>LM35 Temperature Sensor , can buy <a href="">here</a></li>
+  <li>Connecting wires , can buy <a href="">here</a></li>
+  <li>GSM Module [SIMCOM SIM900A] , with an external antenna attached to it , can buy <a href="">here</a></li>
+  <li>Power source for the Arduino Uno , can buy <a href="">here</a></li>
+  <li>Power Source for the GSM Module , can buy <a href="">here</a></li>
 </ol>
 
 ## Requirements
@@ -20,6 +20,9 @@
 
 ## Circuit Diagram
 Connect the devices as per the circuit diagram
+<img src = "https://github.com/KaushikNeelichetty/Arduino-Temperature-SMS-Alert/raw/master/Tempeature%20Alerting%20SMS%20_bb.jpg">
+<br>
+Download the <a href="https://github.com/KaushikNeelichetty/Arduino-Temperature-SMS-Alert/raw/master/Tempeature%20Alerting%20SMS%20.fzz"> Fritzing project </a> if you need a better understanding of the connection.
 <ul>
   <li> With the LM35 flat surface facing you, connect the left most pin to the 3.3V of the Uno, the right most pin to the ground of the Uno and the middle pin to the A1 pin of the Uno </li>
   <li> Connect the TX pin of the GSM Module to digital pin 9 in the Uno , Connect the RX pin of the GSM module to digital pin of the Uno, and the ground pin of GSM Modules TTL to the ground pin of the Uno </li>
@@ -42,4 +45,11 @@ Connect the devices as per the circuit diagram
 </ol>
 
 ## Snapshots 
-Coming Soon...
+Serial Monitor Screenshot<br>
+To enter the serial monitor, open the Arduino IDE on your PC with the Uno plugged into it, select the port to which the Uno is connected and click on the magnifying glass icon on the right top of the IDE, once the serial monitor opens, set the baud rate as per the sketch [here 19200].<br>
+<img src="https://github.com/KaushikNeelichetty/Arduino-Temperature-SMS-Alert/raw/master/Capture.PNG">
+<br>
+Screenshot of the SMS recieved<br>
+This is the screenshot of the SMS recieved upon temperature exceeding the limit set.<br>
+<img src="https://github.com/KaushikNeelichetty/Arduino-Temperature-SMS-Alert/raw/master/Screenshot_20160924-193910.png">
+<br>
