@@ -51,5 +51,6 @@ To enter the serial monitor, open the Arduino IDE on your PC with the Uno plugge
 <br>
 <b>Screenshot of the SMS recieved</b><br>
 This is the screenshot of the SMS recieved upon temperature exceeding the limit set.<br>
-<img src="https://github.com/KaushikNeelichetty/Arduino-Temperature-SMS-Alert/raw/master/Screenshot_20160924-193910.png">
+<img src="https://github.com/KaushikNeelichetty/Arduino-Temperature-SMS-Alert/raw/master/Screenshot_20160924-193910.png" height="480" width="270"/>
+
 <br>
